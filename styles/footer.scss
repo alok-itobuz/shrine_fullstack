@@ -1,0 +1,84 @@
+@use './colors.scss' as color;
+
+
+footer {
+    background: url(../images/footer/footer_bg.png);
+
+    >.container-fluid:first-child {
+        border-bottom: 1px solid color.$light_sky_color;
+
+        .footer-logo-row {
+            .logo-container {
+                height: 2rem;
+            }
+
+            >p {
+                font-size: 0.75rem;
+                color: #929292;
+            }
+        }
+    }
+
+    >.container-fluid:nth-child(2) {
+        border-bottom: 1px solid color.$light_sky_color;
+
+        .footer-body .row .links-col {
+            >h5 {
+                color: color.$white_color;
+                font-size: 0.8rem;
+            }
+
+            >p,
+            a {
+                color: #929292;
+                font-size: 0.7rem;
+            }
+
+            input {
+                font-size: 0.7rem;
+                background: #2f3032;
+                color: #626366;
+            }
+
+            button {
+                width: fit-content;
+                font-size: 0.7rem;
+                color: color.$white_color;
+                background: color.$red_color;
+            }
+        }
+    }
+
+
+    .container-fluid:last-child .copyright-row {
+        >p {
+            color: #929292;
+            font-size: 0.7rem;
+        }
+
+        .icon-container {
+            height: 1.2rem;
+            max-width: 15rem;
+        }
+    }
+
+}
+
+@media (min-width: 768px) {
+    footer {
+        >.container-fluid:nth-child(2) .footer-body .row .links-col {
+            &:not(:nth-child(4)) {
+                width: 22% !important;
+            }
+
+            &:nth-child(4) {
+                width: 34% !important;
+            }
+
+            button {
+                padding-top: 0.7rem !important;
+                padding-bottom: 0.7rem !important;
+            }
+        }
+    }
+}

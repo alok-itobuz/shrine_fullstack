@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap");
+#hero {
+  background: #F6F2EB;
+}
+#hero .jesus-image-container {
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.3;
+}
+#hero .jesus-image-container img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#hero .row:last-child .font-roboto span {
+  font-size: 1.5rem;
+}
+#hero .row:last-child span {
+  font-size: 0.7rem;
+}
+@media (min-width: 768px) {
+  #hero .row:last-child span {
+    font-size: 0.6rem;
+  }
+}
+@media (min-width: 768px) {
+  #hero .row:first-child {
+    aspect-ratio: 5/4;
+  }
+  #hero .row:first-child > div {
+    height: 100% !important;
+  }
+  #hero .row:first-child > div > div.energy-body-wrapper {
+    height: 50% !important;
+  }
+  #hero .row:first-child > div > div.energy-body-wrapper .semi-circle {
+    height: 100% !important;
+    width: 100% !important;
+  }
+  #hero .row:first-child .jesus-image-container {
+    height: 100% !important;
+    position: relative !important;
+    transform: unset;
+    top: unset;
+    opacity: 1;
+    z-index: 3;
+  }
+  #hero .row:first-child .jesus-image-container img {
+    position: absolute;
+    height: 100%;
+    width: 130%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+  }
+  #hero .row:first-child .jesus-image-container .semi-circle {
+    height: 60% !important;
+  }
+}
+
+.section-heading {
+  border-left: 1px solid #c0304f;
+}/*# sourceMappingURL=hero.css.map */
