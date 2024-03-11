@@ -1,1 +1,44 @@
-@use './colors.scss' as color;
+@use "./colors.scss" as color;
+
+#introduction {
+  .row {
+    > .image-container {
+      aspect-ratio: 1/1;
+      max-width: 23rem;
+      background: black;
+      img {
+        &:last-child {
+          height: 85%;
+        }
+      }
+
+      @media (min-width: 768px) {
+        max-width: unset;
+      }
+    }
+    .introduction-card {
+      .image-container {
+        background: black;
+      }
+    }
+
+    &:last-child {
+      background: #ffe6e0;
+
+      .linear-image-container {
+        height: 3rem;
+        aspect-ratio: 4/1;
+        @media (min-width: 768px) {
+          height: 100% !important;
+        }
+      }
+      .text-btn-container {
+        button {
+          min-width: fit-content;
+          height: fit-content;
+          background: black;
+        }
+      }
+    }
+  }
+}

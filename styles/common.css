@@ -14,28 +14,103 @@ body {
   overflow-x: hidden;
 }
 
+.container {
+  max-width: 1100px !important;
+}
+
 .font-roboto {
   font-family: "Roboto Serif", serif !important;
 }
 
+.h-100 {
+  height: 100% !important;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+.object-cover {
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+}
+
+.fs-small {
+  font-size: 0.5rem;
+}
+@media (min-width: 768px) {
+  .fs-small {
+    font-size: 0.8rem !important;
+  }
+}
+@media (min-width: 992px) {
+  .fs-small {
+    font-size: 0.9rem !important;
+  }
+}
+
+.fs-medium {
+  font-size: 0.6rem;
+}
+@media (min-width: 768px) {
+  .fs-medium {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 992px) {
+  .fs-medium {
+    font-size: 1.2rem !important;
+  }
+}
+
+.fs-large {
+  font-size: 1rem;
+}
+@media (min-width: 768px) {
+  .fs-large {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 992px) {
+  .fs-large {
+    font-size: 1.4rem !important;
+  }
+}
+
+.fs-xl {
+  font-size: 1.3rem;
+}
+@media (min-width: 768px) {
+  .fs-xl {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .fs-xl {
+    font-size: 2.3rem;
+  }
+}
+
 .semi-circle {
   border-radius: 50% 50% 0 0;
-  border: 1px solid #DDDDDD;
+  border: 1px solid #dddddd;
   height: 15rem;
   z-index: 2;
   position: relative;
 }
-.semi-circle h3 {
-  font-size: 0.6rem;
-}
-.semi-circle span {
-  font-size: 0.5rem;
-}
 
 .btn-circle {
-  height: 2rem;
-  width: 2rem;
+  max-height: 2rem !important;
+  min-height: 2rem !important;
+  max-width: 2rem !important;
+  min-width: 2rem !important;
   background: black;
-  right: 5%;
-  bottom: 5%;
+}
+@media (min-width: 992px) {
+  .btn-circle {
+    max-height: 3rem !important;
+    min-height: 3rem !important;
+    max-width: 3rem !important;
+    min-width: 3rem !important;
+  }
 }/*# sourceMappingURL=common.css.map */

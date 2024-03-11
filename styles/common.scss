@@ -4,44 +4,100 @@ $font_poppins: "Poppins", sans-serif;
 $font-roboto: "Roboto Serif", serif;
 
 .font-roboto {
-    font-family: $font-roboto;
+  font-family: $font-roboto;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: $font_poppins;
-    overflow-x: hidden;
+  font-family: $font_poppins;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1100px !important;
 }
 
 .font-roboto {
-    font-family: $font-roboto !important;
+  font-family: $font-roboto !important;
+}
+
+.h-100 {
+  height: 100% !important;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+.object-cover {
+  object-fit: cover !important;
+}
+
+.fs-small {
+  font-size: 0.5rem;
+
+  @media (min-width: 768px) {
+    font-size: 0.8rem !important;
+  }
+  @media (min-width: 992px) {
+    font-size: 0.9rem !important;
+  }
+}
+
+.fs-medium {
+  font-size: 0.6rem;
+  @media (min-width: 768px) {
+    font-size: 0.8rem;
+  }
+  @media (min-width: 992px) {
+    font-size: 1.2rem !important;
+  }
+}
+
+.fs-large {
+  font-size: 1rem;
+  @media (min-width: 768px) {
+    font-size: 0.9rem;
+  }
+  @media (min-width: 992px) {
+    font-size: 1.4rem !important;
+  }
+}
+
+.fs-xl {
+  font-size: 1.3rem;
+  @media (min-width: 768px) {
+    font-size: 2rem;
+  }
+  @media (min-width: 992px) {
+    font-size: 2.3rem;
+  }
 }
 
 .semi-circle {
-    border-radius: 50% 50% 0 0;
-    border: 1px solid #DDDDDD;
-    height: 15rem;
-    z-index: 2;
-    position: relative;
-
-    h3 {
-        font-size: .6rem;
-    }
-
-    span {
-        font-size: .5rem;
-    }
+  border-radius: 50% 50% 0 0;
+  border: 1px solid #dddddd;
+  height: 15rem;
+  z-index: 2;
+  position: relative;
 }
 
 .btn-circle {
-    height: 2rem;
-    width: 2rem;
-    background: black;
-    right: 5%;
-    bottom: 5%;
+  max-height: 2rem !important;
+  min-height: 2rem !important;
+  max-width: 2rem !important;
+  min-width: 2rem !important;
+  background: black;
+
+  @media (min-width: 992px) {
+    max-height: 3rem !important;
+    min-height: 3rem !important;
+    max-width: 3rem !important;
+    min-width: 3rem !important;
+  }
 }
