@@ -13,21 +13,24 @@
     right: 5%;
     bottom: 5%;
   }
+
   @media (min-width: 768px) {
     .row:first-child {
       aspect-ratio: 10/7;
 
-      > div {
+      >div {
         height: 100% !important;
 
-        > div.energy-body-wrapper {
+        >div.energy-body-wrapper {
           height: 50% !important;
 
           .semi-circle {
             height: 100% !important;
             width: 100% !important;
+
             .image-container {
               max-width: 10rem;
+
               img {
                 width: 100%;
               }
@@ -46,8 +49,9 @@
 
         img {
           position: absolute;
-          height: 100%;
-          width: 130%;
+          height: 100% !important;
+          width: 130% !important;
+          object-fit: cover !important;
           left: 50%;
           transform: translateX(-50%);
           z-index: 10;

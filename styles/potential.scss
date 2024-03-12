@@ -1,19 +1,24 @@
 @use "./colors.scss" as color;
 
 #potential {
-    @media (min-width: 576px) {
 
-        .small-div,
-        .large-div {
-            max-width: 27rem;
+    .small-div {
+        background: transparent;
+
+        @media (min-width: 576px) {
+            max-width: unset;
+        }
+
+        >.image-container {
+            aspect-ratio: 3/4;
         }
     }
 
-    .small-div {}
-
     .large-div {
+        background: transparent;
+
         >.image-container {
-            aspect-ratio: 3/4;
+            aspect-ratio: 1/1;
         }
     }
 }

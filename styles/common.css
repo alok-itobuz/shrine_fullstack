@@ -7,6 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all 0.3s ease;
 }
 
 body {
@@ -161,4 +162,50 @@ body {
   height: -moz-fit-content;
   height: fit-content;
   background: black;
+}
+
+.shrine-card-wrapper {
+  aspect-ratio: 3/4;
+}
+.shrine-card-wrapper.col-6 {
+  min-width: 50% !important;
+}
+.shrine-card-wrapper.col-sm-4 {
+  min-width: 25% !important;
+}
+.shrine-card-wrapper.col-md-3 {
+  min-width: 33.33333333% !important;
+}
+
+.shrine-card {
+  background: #FFE6E0;
+  border-radius: 10% 10% 10% 0;
+}
+.shrine-card:hover button > span:first-child {
+  display: block;
+}
+.shrine-card .image-container {
+  aspect-ratio: 1/1;
+  background: rebeccapurple;
+}
+.shrine-card button span:first-child {
+  display: none;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+.shrine-card button span:last-child {
+  aspect-ratio: 1/1;
+}
+
+.heading-container .section-heading {
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+.heading-container > span {
+  max-width: 30rem;
+}
+
+.rectangle-circle {
+  aspect-ratio: 5/6;
+  border-radius: 45%;
 }/*# sourceMappingURL=common.css.map */

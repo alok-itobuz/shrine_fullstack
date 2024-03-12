@@ -1,1 +1,1 @@
-{"version":3,"sources":["colors.scss","quote.scss","quote.css"],"names":[],"mappings":"AAAQ,yQAAA;ACER;EACI,iBAAA;EACA,kBAAA;EACA,eAAA;ACAJ","file":"quote.css"}
+{"version":3,"sources":["colors.scss","quote.scss","quote.css"],"names":[],"mappings":"AAAQ,yQAAA;ACER;EAGI,eAAA;ACFJ","file":"quote.css"}

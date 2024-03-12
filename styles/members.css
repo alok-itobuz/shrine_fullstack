@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap");
+#members .cards-container .card-wrapper {
+  aspect-ratio: 5/3;
+  max-width: 20rem;
+}
+#members .cards-container .card-wrapper .card .image-container {
+  background: red;
+  width: unset;
+  aspect-ratio: 5/7;
+  max-width: 45%;
+}
+#members .cards-container .card-wrapper .card .text-container .round-icon-container {
+  height: 1.5rem;
+  aspect-ratio: 1/1;
+  border: 1px solid red;
+}
+#members .cards-container .card-wrapper .card .social-icons-container span {
+  height: 1rem;
+  aspect-ratio: 1/1;
+  background: aqua;
+}
+@media (min-width: 768px) {
+  #members .cards-container .card-wrapper {
+    aspect-ratio: 5/7;
+  }
+  #members .cards-container .card-wrapper .card .image-container {
+    max-width: unset;
+    height: 75% !important;
+  }
+}/*# sourceMappingURL=members.css.map */

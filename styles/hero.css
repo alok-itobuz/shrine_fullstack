@@ -41,8 +41,10 @@
   }
   #hero .row:first-child .jesus-image-container img {
     position: absolute;
-    height: 100%;
-    width: 130%;
+    height: 100% !important;
+    width: 130% !important;
+    -o-object-fit: cover !important;
+       object-fit: cover !important;
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;

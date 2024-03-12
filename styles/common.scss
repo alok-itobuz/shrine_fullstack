@@ -11,6 +11,7 @@ $font-roboto: "Roboto Serif", serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all .3s ease;
 }
 
 body {
@@ -155,4 +156,64 @@ body {
   height: fit-content;
   background: black;
 
+}
+
+.shrine-card-wrapper {
+  aspect-ratio: 3/4;
+
+  &.col-6 {
+    min-width: 50% !important;
+  }
+
+  &.col-sm-4 {
+    min-width: 25% !important;
+  }
+
+  &.col-md-3 {
+    min-width: 33.33333333% !important;
+  }
+}
+
+.shrine-card {
+  background: #FFE6E0;
+  border-radius: 10% 10% 10% 0;
+
+  &:hover {
+    button>span:first-child {
+      display: block;
+    }
+  }
+
+  .image-container {
+    aspect-ratio: 1/1;
+    background: rebeccapurple;
+  }
+
+  button {
+    span {
+      &:first-child {
+        display: none;
+        min-width: fit-content;
+      }
+
+      &:last-child {
+        aspect-ratio: 1/1;
+      }
+    }
+  }
+}
+
+.heading-container {
+  .section-heading {
+    min-width: fit-content;
+  }
+
+  >span {
+    max-width: 30rem;
+  }
+}
+
+.rectangle-circle {
+  aspect-ratio: 5 / 6;
+  border-radius: 45%;
 }
