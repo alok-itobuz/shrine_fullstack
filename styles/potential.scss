@@ -1,0 +1,19 @@
+@use "./colors.scss" as color;
+
+#potential {
+    @media (min-width: 576px) {
+
+        .small-div,
+        .large-div {
+            max-width: 27rem;
+        }
+    }
+
+    .small-div {}
+
+    .large-div {
+        >.image-container {
+            aspect-ratio: 3/4;
+        }
+    }
+}

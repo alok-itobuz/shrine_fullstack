@@ -1,16 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap");
-#introduction .row > .image-container {
-  aspect-ratio: 1/1;
-  max-width: 23rem;
-  background: black;
-}
 #introduction .row > .image-container img:last-child {
   height: 85%;
-}
-@media (min-width: 768px) {
-  #introduction .row > .image-container {
-    max-width: unset;
-  }
 }
 #introduction .row .introduction-card .image-container {
   background: black;
@@ -22,15 +12,12 @@
   height: 3rem;
   aspect-ratio: 4/1;
 }
-@media (min-width: 768px) {
-  #introduction .row:last-child .linear-image-container {
-    height: 100% !important;
-  }
+#introduction .row:last-child .linear-image-container .image-div {
+  aspect-ratio: 1/1;
 }
-#introduction .row:last-child .text-btn-container button {
-  min-width: -moz-fit-content;
-  min-width: fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  background: black;
+#introduction .row:last-child .linear-image-container .image-div .image-container {
+  height: 200%;
+  width: 200%;
+  border: 1px solid white;
+  background: #000;
 }/*# sourceMappingURL=introduction.css.map */

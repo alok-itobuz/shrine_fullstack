@@ -4,7 +4,6 @@ nav {
   background: #f6f2eb;
 
   .nav-links-container .navbar-collapse .nav-link {
-    // font-size: 0.6rem;
     width: fit-content;
     color: color.$dark_blue_color;
   }
@@ -18,17 +17,15 @@ nav {
     border-bottom: 2px solid transparent;
 
     &:not(.button):hover {
-      border-image: linear-gradient(
-        to right,
-        color.$red_color 65%,
-        white 38%,
-        white 75%,
-        color.$red_color 60%
-      );
+      border-image: linear-gradient(to right,
+          color.$red_color 65%,
+          white 38%,
+          white 75%,
+          color.$red_color 60%);
       border-image-slice: 1;
     }
 
-    > img {
+    >img {
       height: 1rem !important;
     }
 
@@ -67,7 +64,6 @@ nav {
       }
 
       span {
-        // font-size: 0.9rem;
         height: 1.5rem;
         top: 0;
         left: 100%;

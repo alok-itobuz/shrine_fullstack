@@ -18,9 +18,6 @@ body {
   overflow-x: hidden;
 }
 
-.container {
-  max-width: 1100px !important;
-}
 
 .font-roboto {
   font-family: $font-roboto !important;
@@ -41,9 +38,14 @@ body {
 .fs-small {
   font-size: 0.5rem;
 
+  @media (min-width: 400px) {
+    font-size: .7rem;
+  }
+
   @media (min-width: 768px) {
     font-size: 0.8rem !important;
   }
+
   @media (min-width: 992px) {
     font-size: 0.9rem !important;
   }
@@ -51,9 +53,11 @@ body {
 
 .fs-medium {
   font-size: 0.6rem;
-  @media (min-width: 768px) {
-    font-size: 0.8rem;
+
+  @media (min-width: 400px) {
+    font-size: .8rem;
   }
+
   @media (min-width: 992px) {
     font-size: 1.2rem !important;
   }
@@ -61,9 +65,11 @@ body {
 
 .fs-large {
   font-size: 1rem;
+
   @media (min-width: 768px) {
     font-size: 0.9rem;
   }
+
   @media (min-width: 992px) {
     font-size: 1.4rem !important;
   }
@@ -71,9 +77,11 @@ body {
 
 .fs-xl {
   font-size: 1.3rem;
+
   @media (min-width: 768px) {
     font-size: 2rem;
   }
+
   @media (min-width: 992px) {
     font-size: 2.3rem;
   }
@@ -100,4 +108,51 @@ body {
     max-width: 3rem !important;
     min-width: 3rem !important;
   }
+}
+
+.hover-cursor-pointer:hover {
+  cursor: pointer;
+}
+
+.message-border {
+  border: 1px dotted black;
+
+  >span {
+    height: .8rem;
+    aspect-ratio: 1/1;
+    border: 1px dotted black;
+    bottom: -.4rem;
+    transform: translateX(-50%) rotate(45deg);
+    border-left-color: transparent;
+    border-top-color: transparent;
+    background: white;
+  }
+}
+
+.section-text-image>.row {
+  >.small-div {
+    aspect-ratio: 1/1;
+    max-width: 23rem;
+    background: black;
+
+    @media (min-width: 576px) {
+      max-width: 30rem;
+    }
+  }
+
+  >.large-div {
+    max-width: 23rem;
+
+    @media (min-width: 576px) {
+      max-width: unset;
+    }
+  }
+}
+
+.btn-square {
+  min-width: fit-content;
+  width: fit-content;
+  height: fit-content;
+  background: black;
+
 }

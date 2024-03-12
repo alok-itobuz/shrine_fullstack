@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/hero.css">
     <link rel="stylesheet" href="./styles/introduction.css">
+    <link rel="stylesheet" href="./styles/quote.css">
+    <link rel="stylesheet" href="./styles/potential.css">
 </head>
 
 <body>
@@ -71,7 +73,7 @@
         </div>
     </nav>
 
-    <!-- section 1 -->
+    <!-- hero section -->
     <section id="hero" class="container py-2 py-md-5">
         <div class="row p-0 m-0 position-relative pt-lg-5">
             <div class="hero-energy col-12 col-md-4 row m-0 p-0">
@@ -154,13 +156,14 @@
     </section>
 
     <!-- section introduction -->
-    <section id="introduction" class="container py-2 py-md-5">
-        <div class="row m-0 p-0">
-            <div class="image-container col-12 col-md-6 p-2 mx-auto mx-md-0 d-flex gap-5">
+    <section id="introduction" class="section-text-image container py-5">
+        <div class="row m-0 p-0 h-100 w-100 justify-content-between ">
+            <div class="image-container small-div col-12 col-sm-6 mx-auto mx-sm-0 p-2 d-flex gap-5">
                 <img src="" alt="" class="flex-grow-1 bg-danger rounded-3 object-fit-cover h-100">
                 <img src="" alt="" class="flex-grow-1 bg-danger rounded-3 object-fit-cover">
             </div>
-            <div class="text-container col-12 col-md-6 p-2 ps-md-4 d-flex flex-column justify-content-between  gap-4">
+            <div
+                class="text-container large-div col-12 col-sm-6 mx-auto mx-sm-0 p-2  ps-md-4 d-flex flex-column justify-content-between gap-4">
                 <h2 class="m-0 p-0 section-heading font-roboto fs-xl">
                     We call price <br>the lord
                 </h2>
@@ -189,22 +192,96 @@
                 </div>
             </div>
         </div>
-        <div class="row m-0 p-0 rounded-2 mt-3 py-4 px-2">
-            <div class="col-12 col-md-4 m-0 d-flex align-items-center justify-content-center mb-4 my-md-0 ">
-                <div class="linear-image-container d-flex">
-                    <div class="image-div h-100 flex-grow-1 position-relative border border-danger ">
-                        <div class="image-container"></div>
+        <div class="row m-0 p-0 rounded-2 mt-3 py-4 px-2 px-md-5 justify-content-around">
+            <div
+                class="col-12 col-md-3 m-0 d-flex align-items-center justify-content-center justify-content-md-start  mb-4 my-md-0 ">
+                <div
+                    class="linear-image-container d-flex align-items-center justify-content-center justify-content-md-start  gap-2">
+                    <div class="image-div h-50 position-relative ">
+                        <div class="image-container position-absolute start-50 top-50 rounded-circle translate-middle">
+                        </div>
                     </div>
-                    <div class="h-100 flex-grow-1 position-relative border border-danger "></div>
-                    <div class="h-100 flex-grow-1 position-relative border border-danger "></div>
-                    <div class="h-100 flex-grow-1 position-relative border border-danger "></div>
+                    <div class="image-div h-50 position-relative ">
+                        <div class="image-container position-absolute start-50 top-50 rounded-circle translate-middle">
+                        </div>
+                    </div>
+                    <div class="image-div h-50 position-relative ">
+                        <div class="image-container position-absolute start-50 top-50 rounded-circle translate-middle">
+                        </div>
+                    </div>
+                    <div class="image-div h-50 position-relative ">
+                        <div class="image-container position-absolute start-50 top-50 rounded-circle translate-middle">
+                        </div>
+                    </div>
                 </div>
             </div>
             <div
-                class="col-12 col-md-8 d-flex align-items-center  justify-content-around m-0 p-0  text-btn-container gap-2">
+                class="col-12 col-md-9 d-flex align-items-center  justify-content-around m-0 p-0  text-btn-container gap-2">
                 <h2 class="m-0 p-0 fs-large flex-grow-1 font-roboto">Building Bridges of Faith, Reaching <br
                         class="d-none d-sm-block "> Hearts with Love.</h2>
-                <button class="m-0 p-0 rounded-2 text-uppercase fs-small px-3 py-2 border-0 text-white">JOIN US</button>
+                <button
+                    class="m-0 p-0 rounded-2 text-uppercase fs-small px-3 py-2 border-0 text-white hover-cuursor-pointer btn-square">JOIN
+                    US</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- quote  -->
+    <section id="quote" class="section-text-image container py-5">
+        <div class="row m-0 p-0 justify-content-between">
+            <div
+                class="text-container large-div col-12 col-sm-6 m-0 p-0 d-flex flex-column justify-content-between align-items-start gap-3 mx-auto mx-sm-0">
+                <h2 class="section-heading fs-xl font-roboto">
+                    Faithful hearts, <br> compassionate hands
+                </h2>
+                <p class="fs-small m-0">
+                    A long established fact that a reader will be distracted by the readable content of a page when
+                    looking.
+                </p>
+                <span class="text-uppercase fs-small message-border w-auto py-2 px-4 rounded-2 position-relative">
+                    FAMOUS QUOTE
+                    <span class="position-absolute d-inline-block start-50"></span>
+                </span>
+
+                <p class="m-0 p-0">
+                    &Prime;<span class="m-0 p-0 fs-small">I love you when you bow in your mosque, kneel in your temple,
+                        pray
+                        in your church. For you and I
+                        are sons of one religion, and it is the spirit</span>&Prime;
+                </p>
+
+                <p class="author m-0 p-0 d-flex align-items-center gap-2">&bdquo; <span
+                        class="author-name text-capitalize font-roboto fs-large fw-semibold">Martin
+                        Luther</span></p>
+            </div>
+            <div class="image-container small-div col-12 col-sm-6 m-0 p-0 p-2 mx-auto mx-sm-0 mt-3 mt-sm-0">
+                <div class="image-wrapper h-100 bg-danger mx-auto ">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- potential -->
+    <section id="potential" class="section-text-image container py-5">
+        <div class="row m-0 p-0 justify-content-between">
+            <div
+                class="small-div col-12 col-sm-6 mx-auto mx-sm-0 p-2  ps-md-4 d-flex flex-column justify-content-between gap-4 order-1 order-sm-0">
+
+            </div>
+            <div
+                class="large-div col-12 col-sm-6 mx-auto mx-sm-0 p-2  ps-md-4 d-flex flex-column justify-content-between gap-4">
+                <h2 class="m-0 p-0 section-heading fs-xl font-roboto">Unleash the potential of About us</h2>
+                <div class="image-container w-100 bg-danger rounded-2 p-0"></div>
+
+                <p class="m-0 fs-small">“I love you when you bow in your mosque, kneel in your temple, pray in your
+                    church. For
+                    you and I are sons of one religion, and it is the spirit”“I love you when you bow in your mosque,
+                    kneel in your temple. mosque, kneel in your
+                    “I love you when you bow in your .</p>
+
+                <button
+                    class="m-0 p-0 rounded-2 text-uppercase fs-small px-3 py-2 border-0 text-white hover-cuursor-pointer btn-square">Read
+                    More</button>
             </div>
         </div>
     </section>

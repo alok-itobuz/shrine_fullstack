@@ -2,20 +2,16 @@
 
 #introduction {
   .row {
-    > .image-container {
-      aspect-ratio: 1/1;
-      max-width: 23rem;
-      background: black;
+
+    >.image-container {
+
       img {
         &:last-child {
           height: 85%;
         }
       }
-
-      @media (min-width: 768px) {
-        max-width: unset;
-      }
     }
+
     .introduction-card {
       .image-container {
         background: black;
@@ -28,17 +24,26 @@
       .linear-image-container {
         height: 3rem;
         aspect-ratio: 4/1;
-        @media (min-width: 768px) {
-          height: 100% !important;
+
+        .image-div {
+          aspect-ratio: 1/1;
+
+          .image-container {
+            height: 200%;
+            width: 200%;
+            border: 1px solid white;
+            background: #000;
+          }
         }
       }
-      .text-btn-container {
-        button {
-          min-width: fit-content;
-          height: fit-content;
-          background: black;
-        }
-      }
+
+      // .text-btn-container {
+      //   button {
+      //     min-width: fit-content;
+      //     height: fit-content;
+      //     background: black;
+      //   }
+      // }
     }
   }
 }

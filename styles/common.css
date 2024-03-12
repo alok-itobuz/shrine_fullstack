@@ -14,10 +14,6 @@ body {
   overflow-x: hidden;
 }
 
-.container {
-  max-width: 1100px !important;
-}
-
 .font-roboto {
   font-family: "Roboto Serif", serif !important;
 }
@@ -38,6 +34,11 @@ body {
 .fs-small {
   font-size: 0.5rem;
 }
+@media (min-width: 400px) {
+  .fs-small {
+    font-size: 0.7rem;
+  }
+}
 @media (min-width: 768px) {
   .fs-small {
     font-size: 0.8rem !important;
@@ -52,7 +53,7 @@ body {
 .fs-medium {
   font-size: 0.6rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 400px) {
   .fs-medium {
     font-size: 0.8rem;
   }
@@ -113,4 +114,51 @@ body {
     max-width: 3rem !important;
     min-width: 3rem !important;
   }
+}
+
+.hover-cursor-pointer:hover {
+  cursor: pointer;
+}
+
+.message-border {
+  border: 1px dotted black;
+}
+.message-border > span {
+  height: 0.8rem;
+  aspect-ratio: 1/1;
+  border: 1px dotted black;
+  bottom: -0.4rem;
+  transform: translateX(-50%) rotate(45deg);
+  border-left-color: transparent;
+  border-top-color: transparent;
+  background: white;
+}
+
+.section-text-image > .row > .small-div {
+  aspect-ratio: 1/1;
+  max-width: 23rem;
+  background: black;
+}
+@media (min-width: 576px) {
+  .section-text-image > .row > .small-div {
+    max-width: 30rem;
+  }
+}
+.section-text-image > .row > .large-div {
+  max-width: 23rem;
+}
+@media (min-width: 576px) {
+  .section-text-image > .row > .large-div {
+    max-width: unset;
+  }
+}
+
+.btn-square {
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: black;
 }/*# sourceMappingURL=common.css.map */
