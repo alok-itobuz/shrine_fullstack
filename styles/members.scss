@@ -1,48 +1,69 @@
 @use "./colors.scss" as color;
 
 #members {
-    .cards-container {
-        .card-wrapper {
-            aspect-ratio: 5/3;
-            max-width: 20rem;
+  .cards-container {
+    .card-wrapper {
+      aspect-ratio: 5/3;
+      max-width: 20rem;
 
-            .card {
-                .image-container {
-                    background: red;
-                    width: unset;
-                    aspect-ratio: 5/7;
-                    max-width: 45%;
-                }
-
-                .text-container {
-                    .round-icon-container {
-                        height: 1.5rem;
-                        aspect-ratio: 1/1;
-                        border: 1px solid red;
-
-                    }
-                }
-
-                .social-icons-container {
-                    span {
-                        height: 1rem;
-                        aspect-ratio: 1/1;
-                        background: aqua;
-                        // visibility: hidden;
-                    }
-                }
-            }
-
-            @media (min-width: 768px) {
-                aspect-ratio: 5/7;
-
-                .card {
-                    .image-container {
-                        max-width: unset;
-                        height: 75% !important;
-                    }
-                }
-            }
+      .card {
+        .image-container {
+          width: unset;
+          aspect-ratio: 5/7;
+          max-width: 45%;
         }
+
+        .text-container {
+          .round-icon-container {
+            height: 1.5rem;
+            aspect-ratio: 1/1;
+            border: 1px solid rgb(0, 0, 0);
+          }
+        }
+
+        .social-icons-container span {
+          height: 1rem;
+          aspect-ratio: 1/1;
+          visibility: hidden;
+        }
+
+        &:hover .social-icons-container span {
+          visibility: visible;
+        }
+      }
+
+      @media (min-width: 992px) {
+        aspect-ratio: 5/8;
+
+        .card {
+          .text-container .divider {
+            width: 1px;
+            background: black;
+          }
+          .social-icons-container span {
+            height: 1.3rem !important;
+          }
+          .image-container {
+            max-width: unset;
+            aspect-ratio: 6/7;
+            height: 70% !important;
+          }
+        }
+      }
     }
+  }
+  .horizontal-row {
+    > span {
+      height: 2px;
+      background: beige;
+    }
+  }
+  > img {
+    height: 6rem;
+    bottom: -3.5rem;
+    &:first-child {
+      top: -3.5rem;
+      bottom: unset;
+    }
+  }
 }

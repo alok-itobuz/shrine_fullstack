@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="./styles/satisfaction.css">
     <link rel="stylesheet" href="./styles/grow.css">
     <link rel="stylesheet" href="./styles/members.css">
+    <link rel="stylesheet" href="./styles/events.css">
+    <link rel="stylesheet" href="./styles/articles.css">
 </head>
 
 <body>
@@ -35,42 +37,51 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mb-lg-0 gap-lg-5 w-100">
-                    <li class="nav-item">
-                        <a class="nav-link text-uppercase fw-semibold ps-0 pe-0 pb-lg-4 fs-small" aria-current="page"
-                            href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-uppercase fw-semibold ps-0 pe-0 pb-lg-4 active fs-small"
-                            href="#">pages</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-uppercase fw-semibold ps-0 pe-0 pb-lg-4 fs-small" href="#">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-uppercase fw-semibold ps-0 pe-0 pb-lg-4 fs-small" href="#">Donation</a>
-                    </li>
-                    <li class="nav-item ms-lg-auto">
-                        <a class="nav-link text-uppercase fw-semibold ps-0 pe-0 pb-lg-4 fs-small" aria-current="page"
-                            href="#">SHOP</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-uppercase fw-semibold ps-0 pe-0 pb-lg-4 fs-small" href="#">CONTACTS</a>
-                    </li>
-                    <li class="nav-item">
-                        <button class="button nav-link text-uppercase fw-semibold ps-0 pe-0 pb-lg-4 border-0" href="#">
-                            <img src="./images/navbar/search.svg" alt="Search Icon" class="h-100" />
-                        </button>
-                    </li>
-                    <li class="nav-item">
-                        <button type="button" class="button nav-link btn position-relative border-0">
-                            <img src="./images/navbar/bag.svg" alt="Bag Icon" class="h-100" />
-                            <span
-                                class="d-flex align-items-center justify-content-center position-absolute translate-middle rounded-circle">2
-                                <span class="visually-hidden">New alerts</span>
-                            </span>
-                        </button>
-                    </li>
+                <ul class="navbar-nav mb-lg-0 gap-lg-5 w-100 d-lg-flex gap-lg-5">
+                    <div
+                        class="left-links flex-grow-1 d-lg-flex align-items-center justify-content-start gap-4  gap-xl-5">
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase fw-semibold ps-0 pe-0 pb-lg-4 fs-small"
+                                aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase fw-semibold ps-0 pe-0 pb-lg-4 active fs-small"
+                                href="#">pages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase fw-semibold ps-0 pe-0 pb-lg-4 fs-small" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase fw-semibold ps-0 pe-0 pb-lg-4 fs-small"
+                                href="#">Donation</a>
+                        </li>
+                    </div>
+                    <div
+                        class="left-links flex-grow-1 d-lg-flex align-items-center justify-content-end gap-4  gap-xl-5">
+                        <li class="nav-item ms-lg-auto">
+                            <a class="nav-link text-uppercase fw-semibold ps-0 pe-0 pb-lg-4 fs-small"
+                                aria-current="page" href="#">SHOP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase fw-semibold ps-0 pe-0 pb-lg-4 fs-small"
+                                href="#">CONTACTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="button nav-link text-uppercase fw-semibold ps-0 pe-0 pb-lg-4 border-0"
+                                href="#">
+                                <img src="./images/navbar/search.svg" alt="Search Icon" class="h-100" />
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="button nav-link btn position-relative border-0">
+                                <img src="./images/navbar/bag.svg" alt="Bag Icon" class="h-100" />
+                                <span
+                                    class="d-flex align-items-center justify-content-center position-absolute translate-middle rounded-circle">2
+                                    <span class="visually-hidden">New alerts</span>
+                                </span>
+                            </button>
+                        </li>
+                    </div>
                 </ul>
             </div>
         </div>
@@ -162,9 +173,15 @@
     <!-- section introduction -->
     <section id="introduction" class="section-text-image container py-5">
         <div class="row m-0 p-0 h-100 w-100 justify-content-between ">
-            <div class="image-container small-div col-12 col-sm-6 mx-auto mx-sm-0 p-2 d-flex gap-5">
-                <img src="" alt="" class="flex-grow-1 bg-danger rounded-3 object-fit-cover h-100">
-                <img src="" alt="" class="flex-grow-1 bg-danger rounded-3 object-fit-cover">
+            <div class="image-container small-div col-12 col-sm-6 mx-auto mx-sm-0 p-2 d-flex justify-content-between ">
+                <div class="image rounded-3 overflow-hidden  h-100">
+                    <img src="./images/introduction/palace.svg" alt=""
+                        class="rounded-3 object-fit-cover h-100 w-100 object-center">
+                </div>
+                <div class="image rounded-3 overflow-hidden">
+                    <img src="./images/introduction/girl.svg" alt=""
+                        class="rounded-3 object-fit-cover h-100 w-100 object-center">
+                </div>
             </div>
             <div
                 class="text-container large-div col-12 col-sm-6 mx-auto mx-sm-0 p-2  ps-md-4 d-flex flex-column justify-content-between gap-4">
@@ -259,7 +276,8 @@
                         Luther</span></p>
             </div>
             <div class="image-container small-div col-12 col-sm-6 m-0 p-0 p-2 mx-auto mx-sm-0 mt-3 mt-sm-0">
-                <div class="image-wrapper rectangle-circle h-100 bg-danger mx-auto ">
+                <div class="image-wrapper rectangle-circle h-100 mx-auto overflow-hidden">
+                    <img src="./images/quote/bibel.svg" alt="" class="h-100 w-100 object-fit-cover object-center">
                 </div>
             </div>
         </div>
@@ -270,7 +288,10 @@
         <div class="row m-0 p-0 justify-content-between">
             <div
                 class="small-div col-12 col-sm-6 mx-auto mx-sm-0 p-2  pe-md-4 d-flex flex-column justify-content-between gap-4 order-1 order-sm-0">
-                <div class="image-container w-100 bg-danger rounded-2 p-0 m-0"></div>
+                <div class="image-container w-100 rounded-2 p-0 m-0 overflow-hidden">
+                    <img src="./images/potential/old_church.svg" alt=""
+                        class="h-100 w-100 object-fit-cover object-center">
+                </div>
                 <p class="m-0 fs-small">“I love you when you bow in your mosque, kneel in your temple, pray in your
                     church. For
                     you and I are sons of one religion, and it is the spirit”“I love you when you bow in your mosque,
@@ -289,7 +310,8 @@
                     of a page when looking.A long established fact that a reader will be distracted by the readable
                     content of a page when looking.</p>
 
-                <div class="image-container w-100 bg-danger rounded-2 p-0"></div>
+                <div class="image-container w-100 rounded-2 p-0 overflow-hidden "><img src="./images/potential/diya.svg"
+                        alt="" class="h-100 w-100 object-fit-cover object-center"></div>
             </div>
         </div>
     </section>
@@ -310,7 +332,10 @@
                 <div class="satisfaction-card-wrapper shrine-card-wrapper col-6 col-sm-4 col-md-3 p-2">
                     <div
                         class="satisfaction-card h-100 w-100 p-2 p-md-3 shrine-card d-flex flex-column gap-3 justify-content-center align-items-center">
-                        <div class="image-container h-25"></div>
+                        <div class="image-container h-25">
+                            <img src="./images/satisfaction/churches.svg" alt=""
+                                class="h-100 w-100 object-fit-cover object-center">
+                        </div>
                         <h3 class="fs-large m-0 text-capitalize font-roboto fw-semibold">Our Churches</h3>
                         <span class="fs-small text-center">A long established fact that a reade.</span>
                         <button
@@ -323,7 +348,10 @@
                 <div class="satisfaction-card-wrapper shrine-card-wrapper col-6 col-sm-4 col-md-3 p-2">
                     <div
                         class="satisfaction-card h-100 w-100 p-2 p-md-3 shrine-card d-flex flex-column gap-3 justify-content-center align-items-center">
-                        <div class="image-container h-25"></div>
+                        <div class="image-container h-25">
+                            <img src="./images/satisfaction/worship.svg" alt=""
+                                class="h-100 w-100 object-fit-cover object-center">
+                        </div>
                         <h3 class="fs-large m-0 text-capitalize font-roboto fw-semibold">Our Churches</h3>
                         <span class="fs-small text-center">A long established fact that a reade.</span>
                         <button
@@ -336,7 +364,10 @@
                 <div class="satisfaction-card-wrapper shrine-card-wrapper col-6 col-sm-4 col-md-3 p-2">
                     <div
                         class="satisfaction-card h-100 w-100 p-2 p-md-3 shrine-card d-flex flex-column gap-3 justify-content-center align-items-center">
-                        <div class="image-container h-25"></div>
+                        <div class="image-container h-25">
+                            <img src="./images/satisfaction/councelling.svg" alt=""
+                                class="h-100 w-100 object-fit-cover object-center">
+                        </div>
                         <h3 class="fs-large m-0 text-capitalize font-roboto fw-semibold">Our Churches</h3>
                         <span class="fs-small text-center">A long established fact that a reade.</span>
                         <button
@@ -349,7 +380,10 @@
                 <div class="satisfaction-card-wrapper shrine-card-wrapper col-6 col-sm-4 col-md-3 p-2">
                     <div
                         class="satisfaction-card h-100 w-100 p-2 p-md-3 shrine-card d-flex flex-column gap-3 justify-content-center align-items-center">
-                        <div class="image-container h-25"></div>
+                        <div class="image-container h-25">
+                            <img src="./images/satisfaction/meet.svg" alt=""
+                                class="h-100 w-100 object-fit-cover object-center">
+                        </div>
                         <h3 class="fs-large m-0 text-capitalize font-roboto fw-semibold">Our Churches</h3>
                         <span class="fs-small text-center">A long established fact that a reade.</span>
                         <button
@@ -378,15 +412,18 @@
 
                 <div class="checkpoints d-flex flex-column gap-3">
                     <div class="wrapper d-flex align-items-center gap-2">
-                        <span class="checkbox rounded-circle"></span>
+                        <span
+                            class="checkbox rounded-circle d-flex align-items-center justify-content-center fs-medium">&check;</span>
                         <span class="fs-small flex-grow-1">Divide the group into smaller teams.</span>
                     </div>
                     <div class="wrapper d-flex align-items-center gap-2">
-                        <span class="checkbox rounded-circle"></span>
+                        <span
+                            class="checkbox rounded-circle d-flex align-items-center justify-content-center fs-medium">&check;</span>
                         <span class="fs-small flex-grow-1">Divide the group into smaller teams.</span>
                     </div>
                     <div class="wrapper d-flex align-items-center gap-2">
-                        <span class="checkbox rounded-circle"></span>
+                        <span
+                            class="checkbox rounded-circle d-flex align-items-center justify-content-center fs-medium">&check;</span>
                         <span class="fs-small flex-grow-1">Divide the group into smaller teams.</span>
                     </div>
                 </div>
@@ -396,21 +433,22 @@
                     <button
                         class="m-0 p-0 rounded-2 text-uppercase fs-small px-3 py-2 border-0 text-white hover-cuursor-pointer btn-square mt-sm-2">Read
                         More</button>
-                    <div class="image-container rounded-2">
-                        <!-- image -->
+                    <div class="image-container rounded-2 overflow-hidden ">
+                        <img src="./images/grow/hand.svg" alt="" class="h-100 w-100 object-fit-cover object-center">
                     </div>
                 </div>
             </div>
             <div class="image-container col-12 col-sm-4 m-0 p-0 mt-3 mt-sm-0 p-sm-2 pb-sm-0">
-                <div class="h-100 w-100 bg-primary image rounded-2">
-                    <!-- image  -->
+                <div class="h-100 w-100 bg-primary image rounded-2 overflow-hidden">
+                    <img src="./images/grow/girl.svg" alt="" class="h-100 w-100 object-fit-cover object-center">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- members -->
-    <section id="members" class="container py-5">
+    <section id="members" class="container py-5 bg-white position-relative">
+        <img src="./images/members/poster0.svg" alt="top poster" class="position-absolute start-50 translate-middle-x">
         <div
             class="heading-container d-flex flex-column flex-sm-row align-items-sm-center justify-content-between gap-3 gap-sm-5">
             <h2 class="section-heading fs-xl font-roboto flex-sm-grow-1 m-0 text-capitalize">
@@ -419,92 +457,380 @@
             <span class="fs-small">A long established fact that a reader will be distracted by the readable content of a
                 page when looking.A long established fact that.A long.</span>
         </div>
-        <div class="row m-0 p-0 mt-4 cards-container justify-content-center">
-            <div class="card-wrapper col-12 col-sm-6 col-md-3 p-2 p-lg-1">
-                <div class="card h-100 w-100 d-flex flex-row flex-md-column p-2 gap-2 gap-md-0">
-                    <div class="image-container rectangle-circle h-100 "></div>
+        <div class="row m-0 p-0 mt-4 mt-lg-5 cards-container justify-content-center">
+            <div class="card-wrapper col-12 col-sm-6 col-lg-3 p-2 p-lg-1">
+                <div class="card h-100 w-100 d-flex flex-row flex-lg-column align-items-lg-center border-0 p-2 gap-2">
+                    <div class="image-container rectangle-circle h-100 overflow-hidden">
+                        <img src="./images/members/member1.svg" alt=""
+                            class="h-100 w-100 object-fit-cover object-center">
+                    </div>
                     <div
-                        class="text-container d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-center justify-content-md-start gap-2">
-                        <div class="round-icon-container rounded-circle"></div>
-                        <span class="divider d-none d-md-block"></span>
+                        class="text-container d-flex flex-column flex-lg-row align-items-start align-items-lg-center justify-content-center justify-content-lg-start gap-2 mt-lg-2">
+                        <div
+                            class="round-icon-container rounded-circle overflow-hidden d-flex align-items-center justify-content-center">
+                            <img src="./images/members/share_icon.svg" alt=""
+                                class="h-50 w-50 object-fit-contain object-center">
+                        </div>
+                        <span class="divider d-none d-lg-block h-75"></span>
                         <div class="text d-flex flex-column justify-content-between gap-2">
                             <h4 class="m-0 fs-large font-roboto">Vonda Sanders</h4>
                             <span class="fs-small">Sir Gerry Serrano</span>
                         </div>
                     </div>
                     <div
-                        class="social-icons-container d-flex flex-column justify-content-center justify-content-center flex-md-row gap-2">
-                        <span class="icon"></span>
-                        <span class="icon"></span>
-                        <span class="icon"></span>
-                        <span class="icon"></span>
+                        class="social-icons-container d-flex flex-column justify-content-center justify-content-center flex-lg-row gap-2">
+                        <span class="icon overflow-hidden"><img src="./images/members/instagram.svg"
+                                class="h-100 w-100 object-fit-contain object-center d-flex align-items-center justify-content-center "
+                                alt=""></span>
+                        <span class="icon overflow-hidden"><img src="./images/members/google.svg"
+                                class="h-100 w-100 object-fit-contain object-center d-flex align-items-center justify-content-center "
+                                alt=""></span>
+                        <span class="icon overflow-hidden"><img src="./images/members/youtube.svg"
+                                class="h-100 w-100 object-fit-contain object-center d-flex align-items-center justify-content-center "
+                                alt=""></span>
                     </div>
                 </div>
             </div>
-            <div class="card-wrapper col-12 col-sm-6 col-md-3 p-2 p-lg-1">
-                <div class="card h-100 w-100 d-flex flex-row flex-md-column p-2 gap-2 gap-md-0">
-                    <div class="image-container rectangle-circle h-100 "></div>
+            <div class="card-wrapper col-12 col-sm-6 col-lg-3 p-2 p-lg-1">
+                <div class="card h-100 w-100 d-flex flex-row flex-lg-column align-items-lg-center border-0 p-2 gap-2">
+                    <div class="image-container rectangle-circle h-100 overflow-hidden">
+                        <img src="./images/members/member2.svg" alt=""
+                            class="h-100 w-100 object-fit-cover object-center">
+                    </div>
                     <div
-                        class="text-container d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-center justify-content-md-start gap-2">
-                        <div class="round-icon-container rounded-circle"></div>
-                        <span class="divider d-none d-md-block"></span>
+                        class="text-container d-flex flex-column flex-lg-row align-items-start align-items-lg-center justify-content-center justify-content-lg-start gap-2 mt-lg-2">
+                        <div
+                            class="round-icon-container rounded-circle overflow-hidden d-flex align-items-center justify-content-center">
+                            <img src="./images/members/share_icon.svg" alt=""
+                                class="h-50 w-50 object-fit-contain object-center">
+                        </div>
+                        <span class="divider d-none d-lg-block h-75"></span>
                         <div class="text d-flex flex-column justify-content-between gap-2">
                             <h4 class="m-0 fs-large font-roboto">Vonda Sanders</h4>
                             <span class="fs-small">Sir Gerry Serrano</span>
                         </div>
                     </div>
                     <div
-                        class="social-icons-container d-flex flex-column justify-content-center justify-content-center flex-md-row gap-2">
-                        <span class="icon"></span>
-                        <span class="icon"></span>
-                        <span class="icon"></span>
-                        <span class="icon"></span>
+                        class="social-icons-container d-flex flex-column justify-content-center justify-content-center flex-lg-row gap-2">
+                        <span class="icon overflow-hidden"><img src="./images/members/instagram.svg"
+                                class="h-100 w-100 object-fit-contain object-center d-flex align-items-center justify-content-center "
+                                alt=""></span>
+                        <span class="icon overflow-hidden"><img src="./images/members/google.svg"
+                                class="h-100 w-100 object-fit-contain object-center d-flex align-items-center justify-content-center "
+                                alt=""></span>
+                        <span class="icon overflow-hidden"><img src="./images/members/youtube.svg"
+                                class="h-100 w-100 object-fit-contain object-center d-flex align-items-center justify-content-center "
+                                alt=""></span>
                     </div>
                 </div>
             </div>
-            <div class="card-wrapper col-12 col-sm-6 col-md-3 p-2 p-lg-1">
-                <div class="card h-100 w-100 d-flex flex-row flex-md-column p-2 gap-2 gap-md-0">
-                    <div class="image-container rectangle-circle h-100 "></div>
+            <div class="card-wrapper col-12 col-sm-6 col-lg-3 p-2 p-lg-1">
+                <div class="card h-100 w-100 d-flex flex-row flex-lg-column align-items-lg-center border-0 p-2 gap-2">
+                    <div class="image-container rectangle-circle h-100 overflow-hidden">
+                        <img src="./images/members/member3.svg" alt=""
+                            class="h-100 w-100 object-fit-cover object-center">
+                    </div>
                     <div
-                        class="text-container d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-center justify-content-md-start gap-2">
-                        <div class="round-icon-container rounded-circle"></div>
-                        <span class="divider d-none d-md-block"></span>
+                        class="text-container d-flex flex-column flex-lg-row align-items-start align-items-lg-center justify-content-center justify-content-lg-start gap-2 mt-lg-2">
+                        <div
+                            class="round-icon-container rounded-circle overflow-hidden d-flex align-items-center justify-content-center">
+                            <img src="./images/members/share_icon.svg" alt=""
+                                class="h-50 w-50 object-fit-contain object-center">
+                        </div>
+                        <span class="divider d-none d-lg-block h-75"></span>
                         <div class="text d-flex flex-column justify-content-between gap-2">
                             <h4 class="m-0 fs-large font-roboto">Vonda Sanders</h4>
                             <span class="fs-small">Sir Gerry Serrano</span>
                         </div>
                     </div>
                     <div
-                        class="social-icons-container d-flex flex-column justify-content-center justify-content-center flex-md-row gap-2">
-                        <span class="icon"></span>
-                        <span class="icon"></span>
-                        <span class="icon"></span>
-                        <span class="icon"></span>
+                        class="social-icons-container d-flex flex-column justify-content-center justify-content-center flex-lg-row gap-2">
+                        <span class="icon overflow-hidden"><img src="./images/members/instagram.svg"
+                                class="h-100 w-100 object-fit-contain object-center d-flex align-items-center justify-content-center "
+                                alt=""></span>
+                        <span class="icon overflow-hidden"><img src="./images/members/google.svg"
+                                class="h-100 w-100 object-fit-contain object-center d-flex align-items-center justify-content-center "
+                                alt=""></span>
+                        <span class="icon overflow-hidden"><img src="./images/members/youtube.svg"
+                                class="h-100 w-100 object-fit-contain object-center d-flex align-items-center justify-content-center "
+                                alt=""></span>
                     </div>
                 </div>
             </div>
-            <div class="card-wrapper col-12 col-sm-6 col-md-3 p-2 p-lg-1">
-                <div class="card h-100 w-100 d-flex flex-row flex-md-column p-2 gap-2 gap-md-0">
-                    <div class="image-container rectangle-circle h-100 "></div>
+            <div class="card-wrapper col-12 col-sm-6 col-lg-3 p-2 p-lg-1">
+                <div class="card h-100 w-100 d-flex flex-row flex-lg-column align-items-lg-center border-0 p-2 gap-2">
+                    <div class="image-container rectangle-circle h-100 overflow-hidden">
+                        <img src="./images/members/member4.svg" alt=""
+                            class="h-100 w-100 object-fit-cover object-center">
+                    </div>
                     <div
-                        class="text-container d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-center justify-content-md-start gap-2">
-                        <div class="round-icon-container rounded-circle"></div>
-                        <span class="divider d-none d-md-block"></span>
+                        class="text-container d-flex flex-column flex-lg-row align-items-start align-items-lg-center justify-content-center justify-content-lg-start gap-2 mt-lg-2">
+                        <div
+                            class="round-icon-container rounded-circle overflow-hidden d-flex align-items-center justify-content-center">
+                            <img src="./images/members/share_icon.svg" alt=""
+                                class="h-50 w-50 object-fit-contain object-center">
+                        </div>
+                        <span class="divider d-none d-lg-block h-75"></span>
                         <div class="text d-flex flex-column justify-content-between gap-2">
                             <h4 class="m-0 fs-large font-roboto">Vonda Sanders</h4>
                             <span class="fs-small">Sir Gerry Serrano</span>
                         </div>
                     </div>
                     <div
-                        class="social-icons-container d-flex flex-column justify-content-center justify-content-center flex-md-row gap-2">
-                        <span class="icon"></span>
-                        <span class="icon"></span>
-                        <span class="icon"></span>
-                        <span class="icon"></span>
+                        class="social-icons-container d-flex flex-column justify-content-center justify-content-center flex-lg-row gap-2">
+                        <span class="icon overflow-hidden"><img src="./images/members/instagram.svg"
+                                class="h-100 w-100 object-fit-contain object-center d-flex align-items-center justify-content-center "
+                                alt=""></span>
+                        <span class="icon overflow-hidden"><img src="./images/members/google.svg"
+                                class="h-100 w-100 object-fit-contain object-center d-flex align-items-center justify-content-center "
+                                alt=""></span>
+                        <span class="icon overflow-hidden"><img src="./images/members/youtube.svg"
+                                class="h-100 w-100 object-fit-contain object-center d-flex align-items-center justify-content-center "
+                                alt=""></span>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="horizontal-row d-flex align-items-center  gap-3 gap-md-5 ">
+            <span class="flex-grow-1"></span>
+            <button
+                class="m-0 p-0 rounded-2 text-uppercase fs-small px-3 py-2 border-0 text-white hover-cuursor-pointer btn-square mt-sm-2">ALL
+                TEAM MEMBERS</button>
+            <span class="flex-grow-1"></span>
+        </div>
+        <img src="./images/members/poster1.svg" alt="top poster" class="position-absolute start-50 translate-middle-x">
+    </section>
+
+    <!-- events -->
+    <section id="events" class="container py-5">
+        <div
+            class="heading-container d-flex flex-column flex-sm-row align-items-sm-center justify-content-between gap-3 gap-sm-5">
+            <h2 class="section-heading fs-xl font-roboto flex-sm-grow-1 m-0 text-capitalize">
+                See our all <br> Events
+            </h2>
+            <span class="fs-small">A long established fact that a reader will be distracted by the readable content of a
+                page when looking.</span>
+        </div>
+
+        <div class="carousel-container w-100 overflow-x-scroll   mt-4 mt-lg-5">
+            <div class="row m-0 p-0 carousel-wrapper flex-nowrap">
+                <div class="carousel-card-wrapper m-0 p-2 col-12 col-sm-8">
+                    <div class="carousel-card h-100 row m-0 rounded-2 overflow-hidden ">
+                        <div class="image-container h-100 col-4 overflow-hidden p-0">
+                            <img src="./images/events/church_father.svg" alt=""
+                                class="h-100 w-100 object-fit-cover object-center d-flex align-items-center justify-content-center ">
+                        </div>
+                        <div class="text-container p-2 ps-md-4 col-8 d-flex flex-column align-items-start gap-2">
+                            <div class="calender icon-row d-flex align-items-center justify-content-start gap-2">
+                                <span class="overflow-hidden">
+                                    <img src="./images/events/calendar.svg" alt=""
+                                        class="h-100 w-100 object-fit-contain object-center d-flex align-items-center justify-content-center ">
+                                </span>
+                                <span class="fs-small">24.12.2023-28.12.2023</span>
+                            </div>
+                            <div class="calender icon-row d-flex align-items-center justify-content-start gap-2">
+                                <span class="overflow-hidden">
+                                    <img src="./images/events/location.svg" alt=""
+                                        class="h-100 w-100 object-fit-contain object-center d-flex align-items-center justify-content-center ">
+                                </span>
+                                <span class="fs-small">Russian Federation St. Peter’s Church</span>
+                            </div>
+                            <div class="calender icon-row d-flex align-items-center justify-content-start gap-2">
+                                <span class="overflow-hidden">
+                                    <img src="./images/events/clock.svg" alt=""
+                                        class="h-100 w-100 object-fit-contain object-center d-flex align-items-center justify-content-center ">
+                                </span>
+                                <span class="fs-small">4:38-8:24</span>
+                            </div>
+                            <h3 class="fw-semibold fs-large m-0 font-roboto">Mindfulness meditation</h3>
+                            <p class="m-0 fs-small">A long established fact that a reader will be distracted by the
+                                readable
+                                content of...</p>
+
+                            <button
+                                class="m-0 p-0 rounded-2 text-uppercase fs-small px-3 py-2 border-0 text-white hover-cuursor-pointer btn-square mt-sm-2">join
+                                now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-card-wrapper m-0 p-2 col-12 col-sm-8">
+                    <div class="carousel-card h-100 row m-0 rounded-2 overflow-hidden ">
+                        <div class="image-container h-100 col-4 overflow-hidden p-0">
+                            <img src="./images/events/bibel.svg" alt=""
+                                class="h-100 w-100 object-fit-cover object-center d-flex align-items-center justify-content-center ">
+                        </div>
+                        <div class="text-container p-2 ps-md-4 col-8 d-flex flex-column align-items-start gap-2">
+                            <div class="calender icon-row d-flex align-items-center justify-content-start gap-2">
+                                <span class="overflow-hidden">
+                                    <img src="./images/events/calendar.svg" alt=""
+                                        class="h-100 w-100 object-fit-contain object-center d-flex align-items-center justify-content-center ">
+                                </span>
+                                <span class="fs-small">24.12.2023-28.12.2023</span>
+                            </div>
+                            <div class="calender icon-row d-flex align-items-center justify-content-start gap-2">
+                                <span class="overflow-hidden">
+                                    <img src="./images/events/location.svg" alt=""
+                                        class="h-100 w-100 object-fit-contain object-center d-flex align-items-center justify-content-center ">
+                                </span>
+                                <span class="fs-small">Russian Federation St. Peter’s Church</span>
+                            </div>
+                            <div class="calender icon-row d-flex align-items-center justify-content-start gap-2">
+                                <span class="overflow-hidden">
+                                    <img src="./images/events/clock.svg" alt=""
+                                        class="h-100 w-100 object-fit-contain object-center d-flex align-items-center justify-content-center ">
+                                </span>
+                                <span class="fs-small">4:38-8:24</span>
+                            </div>
+                            <h3 class="fw-semibold fs-large m-0 font-roboto">Mindfulness meditation</h3>
+                            <p class="m-0 fs-small">A long established fact that a reader will be distracted by the
+                                readable
+                                content of...</p>
+
+                            <button
+                                class="m-0 p-0 rounded-2 text-uppercase fs-small px-3 py-2 border-0 text-white hover-cuursor-pointer btn-square mt-sm-2">join
+                                now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="carousel-buttons-container mt-3 mt-lg-4 d-flex align-items-center justify-content-center gap-2 gap-lg-4">
+            <button
+                class="btn-event-carousel btn-left d-flex align-items-center justify-content-center rounded-circle border-0">&lt;</button>
+            <button
+                class="btn-event-carousel btn-right d-flex align-items-center justify-content-center rounded-circle border-0">&gt;</button>
+        </div>
+    </section>
+
+    <!-- articles -->
+    <section id="articles" class="container py-5">
+        <div
+            class="heading-container d-flex flex-column flex-sm-row align-items-sm-center justify-content-between gap-3 gap-sm-5">
+            <h2 class="section-heading fs-xl font-roboto flex-sm-grow-1 m-0 text-capitalize">
+                Our latest <br> articles
+            </h2>
+            <span class="fs-small">A long established fact that a reader will be distracted by the readable content of a
+                page when looking.A long
+                established fact that.A long.</span>
+        </div>
+
+        <div class="row m-0 p-0 mt-3 article-contents-container">
+            <div class="col-12 col-sm-7 position-relative p-3 rounded-2 overflow-hidden ">
+                <img src="./images/articles/church_inside.svg" alt=""
+                    class="article-main-bg h-100 w-100 position-absolute object-fit-cover start-50 top-50 translate-middle">
+                <div
+                    class="articles-card h-100 d-flex flex-column gap-3 align-items-start justify-content-center bg-white p-3 rounded-2">
+                    <span class="fs-small fw-semibold text-uppercase">FEATURED</span>
+                    <h3 class="font-roboto fw-semibold fs-large">Growing Together <br> in God’s Word</h3>
+                    <p class="m-0 fs-small">A long established fact that a reader will be distracted by the readable
+                        content of...</p>
+                    <span class="fs-small">6 Mar,2023</span>
+                </div>
+            </div>
+            <div class="col-12 col-sm-5 p-0 py-2 p-sm-0 ps-sm-4">
+                <form action="" class="m-0 rounded-2 d-flex flex-column gap-3 p-2 ps-md-3 border border-1 ">
+                    <h3 class="m-0 fs-large font-roboto">Subscribe to church</h3>
+                    <p class="m-0 fs-small">A long established fact that a reader will be distracted by the readable.A
+                        long.
+                    </p>
+                    <input type="text" placeholder="Enter your email" class="fs-small p-2 rounded-2 border-1 ">
+                    <button
+                        class="m-0 p-0 rounded-2 text-uppercase fs-small px-3 py-2 border-0 text-white hover-cuursor-pointer btn-square mt-sm-2">Subscribe</button>
+                    <p class="m-0 d-flex gap-2 ">
+                        <input type="checkbox">
+                        <span class="fs-small">I agree that my sub minted data is being collected and stored</span>
+                    </p>
+                </form>
+            </div>
+        </div>
+
+        <div class="carousel-container w-100 m-0 mt-3 overflow-x-hidden ">
+            <div class="row m-0 p-0 carousel-wrapper flex-nowrap">
+                <div class="crousel-card-wrapper m-0 p-2 col-12 col-sm-6 col-lg-4">
+                    <div class="carousel-card h-100 w-100 d-flex flex-column rounded-2 overflow-hidden mx-auto mx-sm-0">
+                        <div class="image-container w-100 flex-grow-1 overflow-hidden">
+                            <img src="./images/articles/church_dark.png" alt=""
+                                class="h-100 w-100 object-fit-cover object-center">
+                        </div>
+                        <div
+                            class="text-container px-3 py-2 d-flex flex-column justify-content-center gap-2 flex-grow-1">
+                            <h3 class="fs-large m-0 fw-semibold font-roboto">Baptism Sunday of church</h3>
+                            <p class="m-0 fs-small">Sir Gerry Serrano A long established fact that a reader will be
+                                distracted by the readable content of...</p>
+                            <div class="author-container d-flex align-items-center justify-content-start gap-1">
+                                <div
+                                    class="image rounded-circle overflow-hidden d-flex align-items-center justify-content-center">
+                                    <img src="./images/articles/author_dark.png" alt=""
+                                        class="h-100 w-100 object-fit-cover object-center d-flex align-items-center justify-content-center">
+                                </div>
+                                <span class="hr"></span>
+                                <span class="fs-small">2 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="crousel-card-wrapper m-0 p-2 col-12 col-sm-6 col-lg-4">
+                    <div class="carousel-card h-100 w-100 d-flex flex-column rounded-2 overflow-hidden mx-auto mx-sm-0">
+                        <div class="image-container w-100 flex-grow-1 overflow-hidden">
+                            <img src="./images/articles/church_red.png" alt=""
+                                class="h-100 w-100 object-fit-cover object-center">
+                        </div>
+                        <div
+                            class="text-container px-3 py-2 d-flex flex-column justify-content-center gap-2 flex-grow-1">
+                            <h3 class="fs-large m-0 fw-semibold font-roboto">Baptism Sunday of church</h3>
+                            <p class="m-0 fs-small">Sir Gerry Serrano A long established fact that a reader will be
+                                distracted by the readable content of...</p>
+                            <div class="author-container d-flex align-items-center justify-content-start gap-1">
+                                <div
+                                    class="image rounded-circle overflow-hidden d-flex align-items-center justify-content-center">
+                                    <img src="./images/articles/author_red.png" alt=""
+                                        class="h-100 w-100 object-fit-cover object-center d-flex align-items-center justify-content-center">
+                                </div>
+                                <span class="hr"></span>
+                                <span class="fs-small">2 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="crousel-card-wrapper m-0 p-2 col-12 col-sm-6 col-lg-4">
+                    <div class="carousel-card h-100 w-100 d-flex flex-column rounded-2 overflow-hidden mx-auto mx-sm-0">
+                        <div class="image-container w-100 flex-grow-1 overflow-hidden">
+                            <img src="./images/articles/church_brown.png" alt=""
+                                class="h-100 w-100 object-fit-cover object-center">
+                        </div>
+                        <div
+                            class="text-container px-3 py-2 d-flex flex-column justify-content-center gap-2 flex-grow-1">
+                            <h3 class="fs-large m-0 fw-semibold font-roboto">Baptism Sunday of church</h3>
+                            <p class="m-0 fs-small">Sir Gerry Serrano A long established fact that a reader will be
+                                distracted by the readable content of...</p>
+                            <div class="author-container d-flex align-items-center justify-content-start gap-1">
+                                <div
+                                    class="image rounded-circle overflow-hidden d-flex align-items-center justify-content-center">
+                                    <img src="./images/articles/author_brown.png" alt=""
+                                        class="h-100 w-100 object-fit-cover object-center d-flex align-items-center justify-content-center">
+                                </div>
+                                <span class="hr"></span>
+                                <span class="fs-small">2 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div
+            class="carousel-buttons-container mt-3  d-flex align-items-center justify-content-center justify-content-sm-end gap-2 ">
+            <button
+                class="btn-current-page d-flex align-items-center justify-content-around rounded-2 border-0 fs-small ">1</button>
+            <button
+                class="btn-next-page d-flex align-items-center justify-content-around rounded-2 border-0 fs-small ">2</button>
+            <button
+                class="btn-arrow d-flex align-items-center justify-content-around rounded-2 border-0 fs-small ">&gt;</button>
+        </div>
+
     </section>
 
     <!-- Footer -->

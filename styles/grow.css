@@ -10,7 +10,6 @@
   }
 }
 #grow > .row > .text-container > .btn-image-container .image-container {
-  background: red;
   width: 40%;
   aspect-ratio: 4/5;
 }

@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap");
+#events .carousel-container::-webkit-scrollbar {
+  display: none;
+}
+#events .carousel-container .carousel-wrapper {
+  justify-content: unset !important;
+}
+#events .carousel-container .carousel-wrapper .carousel-card {
+  border: 1px solid black;
+}
+#events .carousel-container .carousel-wrapper .carousel-card > .image-container {
+  background: #000;
+}
+#events .carousel-container .carousel-wrapper .carousel-card > .text-container .icon-row span:first-child {
+  height: 1rem;
+  aspect-ratio: 1/1;
+}
+#events .carousel-buttons-container button {
+  height: 1.5rem;
+  aspect-ratio: 1/1;
+}
+@media (min-width: 576px) {
+  #events .carousel-container .carousel-wrapper {
+    gap: 6%;
+  }
+  #events .carousel-buttons-container button {
+    height: 2.5rem;
+  }
+}/*# sourceMappingURL=events.css.map */

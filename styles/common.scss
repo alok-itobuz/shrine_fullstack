@@ -11,7 +11,7 @@ $font-roboto: "Roboto Serif", serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 body {
@@ -19,17 +19,20 @@ body {
   overflow-x: hidden;
 }
 
-
 .font-roboto {
   font-family: $font-roboto !important;
 }
 
-.h-100 {
+img.h-100 {
   height: 100% !important;
 }
 
-.w-100 {
+img.w-100 {
   width: 100% !important;
+}
+
+img.object-center {
+  object-position: center !important;
 }
 
 .object-cover {
@@ -40,7 +43,7 @@ body {
   font-size: 0.5rem;
 
   @media (min-width: 400px) {
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
 
   @media (min-width: 768px) {
@@ -56,7 +59,7 @@ body {
   font-size: 0.6rem;
 
   @media (min-width: 400px) {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   @media (min-width: 992px) {
@@ -118,11 +121,11 @@ body {
 .message-border {
   border: 1px dotted black;
 
-  >span {
-    height: .8rem;
+  > span {
+    height: 0.8rem;
     aspect-ratio: 1/1;
     border: 1px dotted black;
-    bottom: -.4rem;
+    bottom: -0.4rem;
     transform: translateX(-50%) rotate(45deg);
     border-left-color: transparent;
     border-top-color: transparent;
@@ -130,18 +133,17 @@ body {
   }
 }
 
-.section-text-image>.row {
-  >.small-div {
+.section-text-image > .row {
+  > .small-div {
     aspect-ratio: 1/1;
     max-width: 23rem;
-    background: black;
 
     @media (min-width: 576px) {
       max-width: 30rem;
     }
   }
 
-  >.large-div {
+  > .large-div {
     max-width: 23rem;
 
     @media (min-width: 576px) {
@@ -155,7 +157,6 @@ body {
   width: fit-content;
   height: fit-content;
   background: black;
-
 }
 
 .shrine-card-wrapper {
@@ -166,27 +167,26 @@ body {
   }
 
   &.col-sm-4 {
-    min-width: 25% !important;
+    min-width: 33.33333333% !important;
   }
 
   &.col-md-3 {
-    min-width: 33.33333333% !important;
+    min-width: 25% !important;
   }
 }
 
 .shrine-card {
-  background: #FFE6E0;
+  background: #ffe6e0;
   border-radius: 10% 10% 10% 0;
 
   &:hover {
-    button>span:first-child {
+    button > span:first-child {
       display: block;
     }
   }
 
   .image-container {
     aspect-ratio: 1/1;
-    background: rebeccapurple;
   }
 
   button {
@@ -208,7 +208,7 @@ body {
     min-width: fit-content;
   }
 
-  >span {
+  > span {
     max-width: 30rem;
   }
 }

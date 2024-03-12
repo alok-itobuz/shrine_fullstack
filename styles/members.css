@@ -4,7 +4,6 @@
   max-width: 20rem;
 }
 #members .cards-container .card-wrapper .card .image-container {
-  background: red;
   width: unset;
   aspect-ratio: 5/7;
   max-width: 45%;
@@ -12,19 +11,42 @@
 #members .cards-container .card-wrapper .card .text-container .round-icon-container {
   height: 1.5rem;
   aspect-ratio: 1/1;
-  border: 1px solid red;
+  border: 1px solid rgb(0, 0, 0);
 }
 #members .cards-container .card-wrapper .card .social-icons-container span {
   height: 1rem;
   aspect-ratio: 1/1;
-  background: aqua;
+  visibility: hidden;
 }
-@media (min-width: 768px) {
+#members .cards-container .card-wrapper .card:hover .social-icons-container span {
+  visibility: visible;
+}
+@media (min-width: 992px) {
   #members .cards-container .card-wrapper {
-    aspect-ratio: 5/7;
+    aspect-ratio: 5/8;
+  }
+  #members .cards-container .card-wrapper .card .text-container .divider {
+    width: 1px;
+    background: black;
+  }
+  #members .cards-container .card-wrapper .card .social-icons-container span {
+    height: 1.3rem !important;
   }
   #members .cards-container .card-wrapper .card .image-container {
     max-width: unset;
-    height: 75% !important;
+    aspect-ratio: 6/7;
+    height: 70% !important;
   }
+}
+#members .horizontal-row > span {
+  height: 2px;
+  background: beige;
+}
+#members > img {
+  height: 6rem;
+  bottom: -3.5rem;
+}
+#members > img:first-child {
+  top: -3.5rem;
+  bottom: unset;
 }/*# sourceMappingURL=members.css.map */

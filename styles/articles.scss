@@ -1,0 +1,62 @@
+@use "./colors.scss" as color;
+#articles {
+  .article-main-bg {
+    z-index: -1;
+  }
+
+  .articles-card {
+    @media (min-width: 768px) {
+      width: 55% !important;
+    }
+  }
+
+  .carousel-container {
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    .carousel-wrapper {
+      // 100 small, 50% 576px, 33.33 992px
+      .crousel-card-wrapper {
+        .carousel-card {
+          border: 1px solid black;
+          max-width: 18rem;
+          > div {
+            height: 50%;
+          }
+          aspect-ratio: 10/11;
+
+          .text-container {
+            .author-container {
+              .image {
+                height: 2rem;
+                aspect-ratio: 1/1;
+                background: #000a;
+              }
+              .hr {
+                width: 1rem;
+                height: 1.5px;
+                background: beige;
+              }
+            }
+          }
+
+          @media (min-width: 576px) {
+            max-width: unset;
+            aspect-ratio: 5/7;
+          }
+        }
+      }
+    }
+  }
+
+  .carousel-buttons-container {
+    button {
+      height: 1.5rem;
+      aspect-ratio: 1/1;
+
+      @media (min-width: 576px) {
+        height: 2rem;
+      }
+    }
+  }
+}
