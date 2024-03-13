@@ -1,0 +1,76 @@
+@use "./colors.scss" as color;
+
+.navbar-container {
+  background: #f6f2eb;
+
+  nav {
+
+    .nav-links-container .navbar-collapse .nav-link {
+      width: fit-content;
+      color: color.$dark_blue_color;
+    }
+
+    .navbar-brand {
+      height: 2rem;
+    }
+
+    .nav-link {
+      height: 1.5rem;
+      border-bottom: 2px solid transparent;
+
+      &:not(.button):hover {
+        border-image: linear-gradient(to right,
+            color.$red_color 65%,
+            white 38%,
+            white 75%,
+            color.$red_color 60%);
+        border-image-slice: 1;
+      }
+
+      >img {
+        height: 1rem !important;
+      }
+
+      span {
+        top: 0.4rem;
+        right: -1.3rem;
+        background: color.$red_color;
+        aspect-ratio: 1/1;
+        font-size: 0.6rem;
+        height: 1rem;
+        color: color.$very_light_blue_color;
+      }
+
+      @media (min-width: 768px) {
+        // font-size: 0.7rem;
+      }
+    }
+
+    @media (min-width: 992px) {
+      height: 4rem;
+      border-bottom: 2px solid color.$dark_white_color;
+
+      .navbar-brand {
+        background: #f6f2eb;
+        position: absolute;
+        top: 1.3rem;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-right: 0 !important;
+        height: 4.3rem;
+      }
+
+      .nav-link {
+        img {
+          height: 1rem !important;
+        }
+
+        span {
+          height: 1.5rem;
+          top: 0;
+          left: 100%;
+        }
+      }
+    }
+  }
+}
