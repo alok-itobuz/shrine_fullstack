@@ -1,3 +1,4 @@
+import { appendStyle } from "./helpers.js";
 import loadAboutPage from "./pages/about/about.js";
 import { loadHomePage } from "./pages/index.js";
 import state from './states.js'

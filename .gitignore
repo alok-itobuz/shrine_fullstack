@@ -1,4 +1,2 @@
 node_modules
 .vscode
-
-# git commit -m "feat: dynamically rendering the data"
