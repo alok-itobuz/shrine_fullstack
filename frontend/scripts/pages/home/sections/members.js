@@ -1,3 +1,4 @@
+import { members } from "../../../states.js";
 import { sectionHeading } from "../../helpers.js";
 
 const membersCard = ({ name, description, image, socialLinks: { instagram, google, youtube } }) => `
@@ -31,68 +32,19 @@ const membersCard = ({ name, description, image, socialLinks: { instagram, googl
     </div>
 `
 
-export default () => {
-    const membersSectionData = {
-        headingPrimary: "Feel god closer to your members",
-        descriptionPrimary: "A long established fact that a reader will be distracted by the readable content of a page when looking.A long established fact that.A long."
-    }
-
-    // will be fetched from backend
-    const members = [
-        {
-            name: "Vonda Sanders",
-            description: "Sir Gerry Serrano",
-            image: "./images/members/member1.svg",
-            socialLinks: {
-                instagram: "#",
-                google: "#",
-                youtube: "#",
-            }
-        },
-        {
-            name: "Ronnie Ferrell",
-            description: "Sir Gerry Serrano",
-            image: "./images/members/member2.svg",
-            socialLinks: {
-                instagram: "#",
-                google: "#",
-                youtube: "#",
-            }
-        },
-        {
-            name: "Lori Vega",
-            description: "Sir Gerry Serrano",
-            image: "./images/members/member3.svg",
-            socialLinks: {
-                instagram: "#",
-                google: "#",
-                youtube: "#",
-            }
-        },
-        {
-            name: "Annie Trevino",
-            description: "Sir Gerry Serrano",
-            image: "./images/members/member1.svg",
-            socialLinks: {
-                instagram: "#",
-                google: "#",
-                youtube: "#",
-            }
-        },
-    ]
-
-    const { headingPrimary, descriptionPrimary } = membersSectionData
+export default (sectionData) => {
+    const { headingPrimary, descriptionPrimary } = sectionData
 
     return `
     <section id="members" class="container py-5 bg-white position-relative">
         <img src="./images/members/poster0.svg" alt="top poster" class="position-absolute start-50 translate-middle-x">
         ${sectionHeading(headingPrimary, descriptionPrimary)}
         <div class="row m-0 p-0 mt-4 mt-lg-5 cards-container justify-content-center">
-            ${members.map(membersCard).join("")}
+            ${members.slice(0, 4).map(membersCard).join("")}
         </div>
         <div class="horizontal-row d-flex align-items-center  gap-3 gap-md-5 ">
             <span class="flex-grow-1"></span>
-            <button class="m-0 p-0 rounded-2 text-uppercase fs-small px-3 py-2 border-0 text-white hover-cuursor-pointer btn-square mt-sm-2">ALL TEAM MEMBERS</button>
+            <a href="#members" class="m-0 p-0 text-decoration-none rounded-2 text-uppercase fs-small px-3 py-2 border-0 text-white hover-cuursor-pointer btn-square mt-sm-2">ALL TEAM MEMBERS</a>
             <span class="flex-grow-1"></span>
         </div>
         <img src="./images/members/poster1.svg" alt="top poster" class="position-absolute start-50 translate-middle-x">

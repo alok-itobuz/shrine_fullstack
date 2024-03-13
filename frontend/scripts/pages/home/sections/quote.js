@@ -1,8 +1,8 @@
-import { quoteSectionData } from "../../../sectionsData.js";
+
 import { sectionHeading } from "../../helpers.js";
 
-export default () => {
-  const { headingPrimary, descriptionPrimary } = quoteSectionData;
+export default (sectionData) => {
+  const { headingPrimary, descriptionPrimary } = sectionData;
 
   // Quote and Author will be fetched from backend
   const quoteAuthorObj = {

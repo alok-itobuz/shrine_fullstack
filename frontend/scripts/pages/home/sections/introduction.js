@@ -1,4 +1,4 @@
-import { introductionSectionData } from "../../../sectionsData.js";
+
 import { sectionHeading } from "../../helpers.js";
 
 const introCards = ({ heading, paragraph, url, alt }) => {
@@ -35,14 +35,14 @@ const circularImageJoined = ({ url, alt }) => `
     </div>
 `;
 
-export default () => {
+export default (sectionData) => {
     const {
         headingPrimary,
         descriptionPrimary,
         mainImage,
         cards,
         circularImages,
-    } = introductionSectionData;
+    } = sectionData;
 
     return `
     <section id="introduction" class="section-text-image container py-5">

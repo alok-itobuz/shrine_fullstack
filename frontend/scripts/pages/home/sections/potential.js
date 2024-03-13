@@ -1,9 +1,8 @@
-import { potentialSectionData } from "../../../sectionsData.js";
+
 import { sectionHeading } from "../../helpers.js";
 
-export default () => {
-    const { images, headingPrimary, descriptionPrimary, descriptionSecondary } =
-        potentialSectionData;
+export default (sectionData) => {
+    const { images, headingPrimary, descriptionPrimary, descriptionSecondary } = sectionData;
     return `
     <section id="potential" class="section-text-image container py-5">
         <div class="row m-0 p-0 justify-content-between">

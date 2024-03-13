@@ -1,5 +1,3 @@
-import { growSectionData } from "../../../sectionsData.js";
-
 const createCheckPoints = (content) => `
     <div class="wrapper d-flex align-items-center gap-2">
         <span class="checkbox rounded-circle d-flex align-items-center justify-content-center fs-medium">&check;</span>
@@ -7,8 +5,8 @@ const createCheckPoints = (content) => `
     </div>
 `
 
-export default () => {
-    const { headingPrimary, descriptionPrimary, checkPoints, images } = growSectionData
+export default (sectionData) => {
+    const { headingPrimary, descriptionPrimary, checkPoints, images } = sectionData
 
     return `
     <section id="grow" class="container py-5">

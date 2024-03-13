@@ -1,15 +1,18 @@
 import loadAboutPage from "./pages/about/about.js";
 import { loadHomePage } from "./pages/index.js";
 
-const currentLocation = window.location.pathname.split('/');
+function loadSectionData(e) {
+  e.preventDefault()
 
-switch (currentLocation.at(-1)) {
-  case "":
-  case "index.html":
-    loadHomePage();
-    break;
-  case 'about.html':
-    loadAboutPage()
-    break;
-
+  switch (window.location.hash.slice(1)) {
+    case "":
+      loadHomePage();
+      break;
+    case 'about':
+      loadAboutPage()
+      break;
+  }
 }
+
+window.addEventListener('hashchange', loadSectionData)
+window.addEventListener('load', loadSectionData)

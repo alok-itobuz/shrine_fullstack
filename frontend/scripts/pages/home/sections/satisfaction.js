@@ -1,4 +1,3 @@
-import { satisfactionSectionData } from "../../../sectionsData.js";
 import { sectionHeading } from "../../helpers.js";
 
 const satisfactionCard = ({ url, alt, title, description }) => `
@@ -17,9 +16,9 @@ const satisfactionCard = ({ url, alt, title, description }) => `
     </div>
 `
 
-export default () => {
+export default (sectionData) => {
 
-    const { headingPrimary, descriptionPrimary, cards } = satisfactionSectionData
+    const { headingPrimary, descriptionPrimary, cards } = sectionData
 
     return `
     <section id="satisfaction" class="container py-5">
