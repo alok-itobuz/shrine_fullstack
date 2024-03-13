@@ -1,9 +1,4 @@
-const createCheckPoints = (content) => `
-    <div class="wrapper d-flex align-items-center gap-2">
-        <span class="checkbox rounded-circle d-flex align-items-center justify-content-center fs-medium">&check;</span>
-        <span class="fs-small flex-grow-1">${content}</span>
-    </div>
-`
+import { createCheckPoints } from "../../../components/home.js";
 
 export default (sectionData) => {
     const { headingPrimary, descriptionPrimary, checkPoints, images } = sectionData

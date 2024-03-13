@@ -1,4 +1,3 @@
-
 import { sectionHeading } from "../../helpers.js";
 
 export default (sectionData) => {

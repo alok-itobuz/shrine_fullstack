@@ -130,5 +130,7 @@ export const eventsSectionData = {
 }
 export const articlesSectionData = {
   headingPrimary: 'Our latest articles',
-  descriptionPrimary: 'A long established fact that a reader will be distracted by the readable content of a page when looking.A long established fact that.A long.'
+  descriptionPrimary: 'A long established fact that a reader will be distracted by the readable content of a page when looking.A long established fact that.A long.',
+  headingSecondary: "Subscribe to church",
+  descriptionSecondary: "A long established fact that a reader will be distracted by the readable.A long."
 }

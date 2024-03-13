@@ -1,39 +1,6 @@
-
+import { circularImageJoined, introCardsGenerator, introImage } from "../../../components/home.js";
 import { sectionHeading } from "../../helpers.js";
 
-const introCards = ({ heading, paragraph, url, alt }) => {
-    return `
-    <div class="introduction-card d-flex gap-2">
-        <div class="image-container rounded-circle  btn-circle overflow-hidden">
-          <img src=${url} alt=${alt ?? "alternate alt"
-        } class="rounded-3 object-fit-cover h-100 w-100 object-center"></div>
-        <div class="text-container d-flex flex-column gap-2">
-            <h3 class="m-0 p-0 roboto-serif fs-large font-roboto ">
-                ${heading}
-            </h3>
-            <span class="fs-small">
-                ${paragraph}
-            </span>
-        </div>
-    </div>
-    `;
-};
-
-const introImage = ({ url, alt }) => `
-    <div class="image rounded-3 overflow-hidden">
-        <img src=${url} alt=${alt ?? "alternate alt"
-    } class="rounded-3 object-fit-cover h-100 w-100 object-center">
-    </div>
-`;
-
-const circularImageJoined = ({ url, alt }) => `
-    <div class="image-div h-50 position-relative ">
-        <div class="image-container position-absolute start-50 top-50 rounded-circle translate-middle overflow-hidden">
-        <img src=${url} alt=${alt ?? "alternate alt"
-    } class="rounded-3 object-fit-cover h-100 w-100 object-center">
-        </div>
-    </div>
-`;
 
 export default (sectionData) => {
     const {
@@ -53,7 +20,7 @@ export default (sectionData) => {
             <div class="text-container large-div col-12 col-sm-6 mx-auto mx-sm-0 p-2  ps-md-4 d-flex flex-column justify-content-between gap-4">
                 ${sectionHeading(headingPrimary)}
                 <span class="fs-small">${descriptionPrimary}</span>
-                ${cards.map(introCards).join(" ")}
+                ${cards.map(introCardsGenerator).join(" ")}
             </div>
         </div>
         <div class="row m-0 p-0 rounded-2 mt-3 py-4 px-2 px-md-5 justify-content-around">
