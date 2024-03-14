@@ -7,7 +7,6 @@ import subscribeRouter from './routes/subscribeRoute.js'
 import cors from 'cors'
 import * as config from './config/constants.js'
 
-
 const app = express()
 app.use(cors())
 const { PORT } = config

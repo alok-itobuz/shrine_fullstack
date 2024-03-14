@@ -8,6 +8,9 @@ const memberSchema = mongoose.Schema({
     description: {
         type: String,
     },
+    image: {
+        type: String
+    },
     socialHandles: {
         instagram: {
             type: String,

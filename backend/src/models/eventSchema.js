@@ -26,9 +26,16 @@ const eventSchema = mongoose.Schema({
         type: String
     },
     duration: {
-        type: Number
+        startTime: {
+            type: String,
+            default: '4:38'
+        },
+        endTime: {
+            type: String
+        }
     },
 })
+
 
 const Event = mongoose.model('Events', eventSchema)
 

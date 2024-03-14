@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const articleSchema = mongoose.Schema({
+const articleSchema = new mongoose.Schema({
     title: {
         type: String,
         required: true
@@ -25,6 +25,12 @@ const articleSchema = mongoose.Schema({
         type: Date,
         default: Date.now()
     }
+})
+
+articleSchema.pre(['find', 'findOne'], async function (next) {
+
+    console.log(this.$where('title'))
+    next()
 })
 
 const Article = mongoose.model('Article', articleSchema)

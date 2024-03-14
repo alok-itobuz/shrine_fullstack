@@ -4,7 +4,7 @@ export default (() => [
         description: 'Sir Gerry Serrano A long established fact that a reader will be distracted by the readable content of...',
         image: './images/articles/church_inside.svg',
         featured: false,
-        publishedAt: '',
+        publishedAt: '2023/03/06',
         duration: 2
     },
     {
@@ -12,7 +12,7 @@ export default (() => [
         description: 'Sir Gerry Serrano A long established fact that a reader will be distracted by the readable content of...',
         image: "./images/articles/church_red.png",
         featured: false,
-        publishedAt: '',
+        publishedAt: '2023/03/06',
         duration: 4
     },
     {
@@ -20,7 +20,7 @@ export default (() => [
         description: 'Sir Gerry Serrano A long established fact that a reader will be distracted by the readable content of...',
         image: "./images/articles/church_brown.png",
         featured: false,
-        publishedAt: '',
+        publishedAt: '2023/03/06',
         duration: 2
     },
     {
@@ -28,7 +28,7 @@ export default (() => [
         description: 'A long established fact that a reader will be distracted by the readable content of...',
         image: "./images/articles/church_inside.svg",
         featured: true,
-        publishedAt: '6 Mar,2023',
+        publishedAt: '2023/03/06',
         duration: 2
     },
 ])()

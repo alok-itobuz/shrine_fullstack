@@ -3,7 +3,7 @@ export default (() => [
         name: "Vonda Sanders",
         description: "Sir Gerry Serrano",
         image: "./images/members/member1.svg",
-        socialLinks: {
+        socialHandles: {
             instagram: "#",
             google: "#",
             youtube: "#",
@@ -13,7 +13,7 @@ export default (() => [
         name: "Ronnie Ferrell",
         description: "Sir Gerry Serrano",
         image: "./images/members/member2.svg",
-        socialLinks: {
+        socialHandles: {
             instagram: "#",
             google: "#",
             youtube: "#",
@@ -23,7 +23,7 @@ export default (() => [
         name: "Lori Vega",
         description: "Sir Gerry Serrano",
         image: "./images/members/member3.svg",
-        socialLinks: {
+        socialHandles: {
             instagram: "#",
             google: "#",
             youtube: "#",
@@ -33,7 +33,7 @@ export default (() => [
         name: "Annie Trevino",
         description: "Sir Gerry Serrano",
         image: "./images/members/member1.svg",
-        socialLinks: {
+        socialHandles: {
             instagram: "#",
             google: "#",
             youtube: "#",

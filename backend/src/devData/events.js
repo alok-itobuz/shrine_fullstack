@@ -2,8 +2,8 @@ export default (() => [
     {
         image: "./images/events/church_father.svg",
         date: {
-            startDate: "24.12.2023",
-            endDate: "28.12.2023"
+            startDate: "2023/12/24",
+            endDate: "2023/12/28"
         },
         location: "Russian Federation St. Peter’s Church",
         duration: {
@@ -16,8 +16,8 @@ export default (() => [
     {
         image: "./images/events/bibel.svg",
         date: {
-            startDate: "24.12.2023",
-            endDate: "28.12.2023"
+            startDate: "2023/12/24",
+            endDate: "2023/12/28"
         },
         location: "the positive aura seminar",
         duration: {
@@ -30,8 +30,8 @@ export default (() => [
     {
         image: "./images/events/church_father.svg",
         date: {
-            startDate: "24.12.2023",
-            endDate: "28.12.2023"
+            startDate: "2023/12/24",
+            endDate: "2023/12/28"
         },
         location: "Russian Federation St. Peter’s Church",
         duration: {
@@ -44,8 +44,8 @@ export default (() => [
     {
         image: "./images/events/bibel.svg",
         date: {
-            startDate: "24.12.2023",
-            endDate: "28.12.2023"
+            startDate: "2023/12/24",
+            endDate: "2023/12/28"
         },
         location: "the positive aura seminar",
         duration: {
