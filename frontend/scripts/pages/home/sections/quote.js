@@ -31,7 +31,7 @@ export default (sectionData) => {
             </div>
             <div class="image-container small-div col-12 col-sm-6 m-0 p-0 p-2 mx-auto mx-sm-0 mt-3 mt-sm-0">
                 <div class="image-wrapper rectangle-circle h-100 mx-auto overflow-hidden">
-                    <img src=${quoteImage.url} alt=${quoteImage.alt
+                    <img src=${quoteImage?.url} alt=${quoteImage?.alt
     } class="h-100 w-100 object-fit-cover object-center">
                 </div>
             </div>

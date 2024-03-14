@@ -120,14 +120,17 @@ export const growSectionData = {
     },
   ]
 }
+
 export const membersSectionData = {
   headingPrimary: "Feel god closer to your members",
   descriptionPrimary: "A long established fact that a reader will be distracted by the readable content of a page when looking.A long established fact that.A long."
 }
+
 export const eventsSectionData = {
   headingPrimary: 'See our all Events',
   descriptionPrimary: "A long established fact that a reader will be distracted by the readable content of a page when looking."
 }
+
 export const articlesSectionData = {
   headingPrimary: 'Our latest articles',
   descriptionPrimary: 'A long established fact that a reader will be distracted by the readable content of a page when looking.A long established fact that.A long.',

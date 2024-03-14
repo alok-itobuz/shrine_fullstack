@@ -10,7 +10,7 @@ export default (sectionData) => {
 
         <div class="slider-container position-relative mt-4 ">
             <div class="carousel-wrapper row flex-nowrap overflow-x-scroll">
-                ${cards.map(satisfactionCardGenerator).join("")}
+                ${cards?.map(satisfactionCardGenerator).join("")}
             </div>
         </div>
     </section>

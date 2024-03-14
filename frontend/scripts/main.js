@@ -1,12 +1,19 @@
-import { appendStyle } from "./helpers.js";
+import { API_URL } from "./constants.js";
 import loadAboutPage from "./pages/about/about.js";
-import { loadHomePage } from "./pages/index.js";
-import state from './states.js'
+import loadHomePage from "./pages/home/home.js";
+import state, { fetchAndStore } from './states.js'
 
 // fetch and update the state
+(async function () {
+  await fetchAndStore(`${API_URL}/members`, 'members')
+  await fetchAndStore(`${API_URL}/articles`, 'articles')
+  await fetchAndStore(`${API_URL}/events`, 'events')
+  loadSectionData()
+})()
+
 
 function loadSectionData(e) {
-  e.preventDefault()
+  e?.preventDefault()
 
   switch (window.location.hash.slice(1)) {
     case "":
@@ -18,5 +25,5 @@ function loadSectionData(e) {
   }
 }
 
-window.addEventListener('hashchange', loadSectionData)
-window.addEventListener('load', loadSectionData)
+loadSectionData()
+window.addEventListener('hashchange', loadSectionData);

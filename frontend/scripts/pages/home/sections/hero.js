@@ -43,7 +43,7 @@ export default () => {
         <div class="container py-2 py-md-5">
             <div class="row p-0 m-0 position-relative pt-lg-5">
                 <div class="hero-energy col-6 col-md-4 row m-0 p-0">
-                    ${cardsData.slice(0, 2).map(bodyWrapper).join("")}
+                    ${cardsData?.slice(0, 2)?.map(bodyWrapper).join("")}
                 </div>
                 <div class="jesus-image-container col-md-4 d-md-block position-absolute p-0  h-75 d-md-flex flex-column">
                     <img src="./images/hero/jesus.svg" alt="jesus"
@@ -54,8 +54,7 @@ export default () => {
                     <div class="energy-body-wrapper col-12 p-2 py-md-0">
                         <div class="semi-circle energy-body d-flex flex-column align-items-center justify-content-center p-2 py-md-0">
                             <div class="image-container h-75">
-                                <img src="./images/hero/spiritual.svg" alt="spiritual"
-                                    class="h-100 object-fit-contain ">
+                                <img src="./images/hero/spiritual.svg" alt="spiritual" class="h-100 object-fit-contain ">
                             </div>
                             <button class="btn-circle position-absolute rounded-circle border-0"></button>
                         </div>

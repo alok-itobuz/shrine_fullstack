@@ -20,6 +20,7 @@ import {
   quoteSection,
   satisfactionSection,
 } from "./sections/index.js";
+import { API_URL } from "../../constants.js";
 
 export default (state) => {
   const main = document.querySelector("main");
@@ -32,7 +33,7 @@ export default (state) => {
     potentialSection(potentialSectionData),
     satisfactionSection(satisfactionSectionData),
     growSection(growSectionData),
-    membersSection(membersSectionData, state.members.slice(0, 4)),
+    membersSection(membersSectionData, state.members?.slice(0, 4)),
     eventsSection(eventsSectionData, state.events),
     articlesSection(articlesSectionData, state.articles),
   ];
@@ -53,7 +54,7 @@ export default (state) => {
   );
 
   let currentEventCarousel = 0;
-  btnEventLeft.addEventListener("click", () => {
+  btnEventLeft?.addEventListener("click", () => {
     if (currentEventCarousel === 0) return;
     currentEventCarousel--;
     carouselHandler(
@@ -62,7 +63,7 @@ export default (state) => {
       eventCarouselCardWrapper.getBoundingClientRect().width
     );
   });
-  btnEventRight.addEventListener("click", () => {
+  btnEventRight?.addEventListener("click", () => {
     if (currentEventCarousel === events.length - 1) return;
     currentEventCarousel++;
     carouselHandler(
@@ -71,4 +72,29 @@ export default (state) => {
       eventCarouselCardWrapper.getBoundingClientRect().width
     );
   });
+
+  // article subscribe email
+  const subscribeInputCheckbox = document.querySelector('#articles .subscribe-checkbox')
+  const inputSubscriberEmail = document.querySelector('#articles .input-subscribe-email')
+  const formSubscribe = document.querySelector('#articles .form-subscribe')
+
+
+  formSubscribe?.addEventListener('submit', async (e) => {
+    e.preventDefault()
+
+    if (!inputSubscriberEmail.value) return alert('Email shoule be present.')
+    if (!subscribeInputCheckbox.checked) return alert('You must agree the terms and conditions.')
+
+    const data = {
+      email: inputSubscriberEmail.value
+    }
+    // todo: send email to backend
+    const response = await fetch(`${API_URL}/subscribe`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    })
+  })
 };

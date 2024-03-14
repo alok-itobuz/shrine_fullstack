@@ -11,14 +11,12 @@ export default (sectionData) => {
                 <p class="m-0 p-0 fs-small">${descriptionPrimary}</p>
 
                 <div class="checkpoints d-flex flex-column gap-3">
-                    ${checkPoints.map(createCheckPoints).join("")}
+                    ${checkPoints?.map(createCheckPoints).join("")}
                 </div>
-
-                <div
-                    class="btn-image-container d-flex align-items-center  align-items-sm-start justify-content-between">
+                <div class="btn-image-container d-flex align-items-center  align-items-sm-start justify-content-between">
                     <button class="m-0 p-0 rounded-2 text-uppercase fs-small px-3 py-2 border-0 text-white hover-cuursor-pointer btn-square mt-sm-2">Read More</button>
                     <div class="image-container rounded-2 overflow-hidden ">
-                        <img src=${images[0].url} alt=${images[0].alt} class="h-100 w-100 object-fit-cover object-center">
+                        <img src=${images[0]?.url} alt=${images[0].alt} class="h-100 w-100 object-fit-cover object-center">
                     </div>
                 </div>
             </div>
